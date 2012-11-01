@@ -4,6 +4,8 @@
 #include "OOOCode.h"
 
 #define OOOModuleExport(MODULE, CLASS)	OOOCall(MODULE, set, OOOQuote(CLASS), OOOPaste(CLASS, _construct))
+
+#define OOOModuleDeclare(CLASS)			OOOPaste(CLASS, _constructor) OOOPaste(CLASS, _construct) = NULL
 #define OOOModuleLink(MODULE, CLASS)	OOOPaste(CLASS, _construct) = (OOOPaste(CLASS, _constructor)) OOOCall(MODULE, get, OOOQuote(CLASS))
 
 #define OOOClass OOOModule
