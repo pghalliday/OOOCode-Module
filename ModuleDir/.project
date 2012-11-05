@@ -4,7 +4,6 @@
 	<comment></comment>
 	<projects>
 		<project>Module</project>
-		<project>ModuleRes</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
